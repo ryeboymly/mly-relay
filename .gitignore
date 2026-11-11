@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Temp files
+*.tmp
+*.log
+.word_history.json
+
+# OS
+.DS_Store
+Thumbs.db
