@@ -19,19 +19,28 @@ Public relay station for C-CLAW (大头虾) environment.
 
 ```
 mly-relay/
-├── README.md              ← 本文件
-├── opencode/              ← OpenCode 安装脚本和依赖
-│   └── install.sh
-├── skills/                ← 开源 skill 镜像
-├── tools/                 ← 通用工具脚本（无敏感信息）
-└── config/                ← 脱敏配置模板
+├── README.md                          本文件
+├── .gitignore
+├── opencode/
+│   └── install.sh                     OpenCode 安装脚本占位
+├── skills/
+│   └── .gitkeep
+├── tools/
+│   ├── .gitkeep
+│   ├── install_playwright.sh          Playwright Chromium 安装脚本
+│   └── install_precommit.sh           pre-commit 安装脚本
+├── config/
+│   ├── .gitkeep
+│   └── .pre-commit-config.yaml        pre-commit 配置模板
+└── docs/
+    └── c-claw-docs.md                 C-Claw 社区文档镜像
 ```
 
 ## Usage (大头虾侧)
 
 ```bash
 # 通过 cap-webfetch 拉取文件
-cap-webfetch("https://raw.githubusercontent.com/ryeboymly/mly-relay/main/opencode/install.sh")
+cap-webfetch("https://raw.githubusercontent.com/ryeboymly/mly-relay/main/tools/install_playwright.sh")
 ```
 
 ## Owner
